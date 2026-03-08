@@ -1,4 +1,4 @@
-<img src="./le_bouledogue.png" width="300"><br>
+<img src="./le_bouledogue.png" width="700"><br>
 
 # Le Bouledogue
 
