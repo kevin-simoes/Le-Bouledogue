@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+  /* ============================= */
+  /* DIM GREY */
+  /* ============================= */
+  --color-dim-grey-50: rgb(243 243 241);
+  --color-dim-grey-100: rgb(232 230 227);
+  --color-dim-grey-200: rgb(209 205 199);
+  --color-dim-grey-300: rgb(185 180 172);
+  --color-dim-grey-400: rgb(162 155 144);
+  --color-dim-grey-500: rgb(139 130 116);
+  --color-dim-grey-600: rgb(111 104 93);
+  --color-dim-grey-700: rgb(83 78 70);
+  --color-dim-grey-800: rgb(56 52 46);
+  --color-dim-grey-900: rgb(28 26 23);
+  --color-dim-grey-950: rgb(19 18 16);
+
+  /* ============================= */
+  /* SILVER */
+  /* ============================= */
+  --color-silver-50: rgb(244 242 241);
+  --color-silver-100: rgb(232 229 227);
+  --color-silver-200: rgb(210 203 198);
+  --color-silver-300: rgb(187 177 170);
+  --color-silver-400: rgb(164 151 142);
+  --color-silver-500: rgb(142 125 113);
+  --color-silver-600: rgb(113 100 91);
+  --color-silver-700: rgb(85 75 68);
+  --color-silver-800: rgb(57 50 45);
+  --color-silver-900: rgb(28 25 23);
+  --color-silver-950: rgb(20 17 16);
+
+  /* ============================= */
+  /* TOFFEE BROWN */
+  /* ============================= */
+  --color-toffee-brown-50: rgb(246 242 239);
+  --color-toffee-brown-100: rgb(236 229 223);
+  --color-toffee-brown-200: rgb(217 203 191);
+  --color-toffee-brown-300: rgb(198 177 159);
+  --color-toffee-brown-400: rgb(180 150 126);
+  --color-toffee-brown-500: rgb(161 124 94);
+  --color-toffee-brown-600: rgb(129 99 75);
+  --color-toffee-brown-700: rgb(96 75 57);
+  --color-toffee-brown-800: rgb(64 50 38);
+  --color-toffee-brown-900: rgb(32 25 19);
+  --color-toffee-brown-950: rgb(22 17 13);
+
+  /* ============================= */
+  /* CAMEL */
+  /* ============================= */
+  --color-camel-50: rgb(255, 249, 244);
+  --color-camel-100: rgb(252, 242, 231);
+  --color-camel-200: rgb(225 204 183);
+  --color-camel-300: rgb(211 179 146);
+  --color-camel-400: rgb(196 153 110);
+  --color-camel-500: rgb(181 128 74);
+  --color-camel-600: rgb(145 102 59);
+  --color-camel-700: rgb(109 77 44);
+  --color-camel-800: rgb(72 51 30);
+  --color-camel-900: rgb(36 26 15);
+  --color-camel-950: rgb(25 18 10);
+
+  /* ============================= */
+  /* GRAPHITE */
+  /* ============================= */
+  --color-graphite-50: rgb(243 242 242);
+  --color-graphite-100: rgb(231 228 229);
+  --color-graphite-200: rgb(206 202 203);
+  --color-graphite-300: rgb(182 175 177);
+  --color-graphite-400: rgb(157 149 151);
+  --color-graphite-500: rgb(133 122 124);
+  --color-graphite-600: rgb(106 98 100);
+  --color-graphite-700: rgb(80 73 75);
+  --color-graphite-800: rgb(53 49 50);
+  --color-graphite-900: rgb(27 24 25);
+  --color-graphite-950: rgb(19 17 17);
+
+  /* ============================= */
+  /* LEBRON PALETTE (NOVAS CORES) */
+  /* ============================= */
+  --color-lebron-50: #ffffff;
+  --color-lebron-100: #f3f4e5;
+  --color-lebron-200: #e2e3d9;
+  --color-lebron-400: #a1c1be;
+  --color-lebron-700: #59554e;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+button {
+  cursor: pointer;
 }

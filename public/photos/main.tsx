@@ -1,0 +1,6 @@
+import cake1 from "../../public/photos/cake.avif"
+import cake2 from "../../public/photos/cake2.avif"
+import bread from "../../public/photos/bread.avif"
+import bread2 from "../../public/photos/bread2.avif"
+import bakery from "../../public/photos/bakery.avif"
+import bakery2 from "../../public/photos/bakery2.avif"
