@@ -1,4 +1,7 @@
-<img src="./le_bouledogue.png" width="600" style="display: block; margin: 0 auto;">
+<div style="text-align: center;">
+    <img src="./le_bouledogue.png" width="600">
+</div>
+
 
 # Le Bouledogue
 
