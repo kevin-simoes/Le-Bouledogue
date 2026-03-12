@@ -5,6 +5,7 @@ import LogoutButton from "./Logout";
 import SearchBar from "./SearchBar";
 import Link from "next/link";
 import { FaShoppingCart } from "react-icons/fa";
+import { useCart } from "./CartContext";
 
 export default function Header(){
   const [role,setRole] = useState("");
@@ -13,18 +14,34 @@ export default function Header(){
       const userRole = localStorage.getItem("role");
       setRole(userRole || "");
     },[])
+    const { cart } = useCart();
+
+    const totalItems = cart.length;
+    
 return (
-<header className="bg-(--color-camel-100) text-(--color-camel-700) w-full top-0 z-50 shadow-md">
+<header className="bg-(--color-camel-100) text-(--color-amber-700) w-full top-0 z-50 shadow-md">
         
 {/* Top Bar */}
 <div className="px-20 py-4 flex justify-between items-center">
-<h1 className={`${greatVibes.className} text-6xl text-center`}>
+  <Link href="/">
+<h1 className={`${greatVibes.className} text-6xl text-center hover:text-(--color-camel-600)`}>
     Le Bouledogue
   </h1>
+  </Link>
 
   <div className="flex items-center gap-4">
     <SearchBar />
-    <FaShoppingCart />
+    <div className="relative">
+      <Link href="/cart">
+        <FaShoppingCart size={24} />
+      </Link>
+
+        {totalItems > 0 && (
+          <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 rounded-full">
+            {totalItems}
+          </span>
+        )}
+      </div>
     <div className="flex items-center gap-2 cursor-pointer hover:opacity-80">
       <span>
         {!role && (

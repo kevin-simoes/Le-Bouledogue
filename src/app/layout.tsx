@@ -1,5 +1,6 @@
-import { Geist, Geist_Mono, Great_Vibes, Outfit } from "next/font/google";
+import { Geist, Geist_Mono, Great_Vibes, Outfit, Poppins } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "../../src/components/CartContext";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -9,6 +10,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-geist-mono",
+});
+
+export const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['400','700'], // 400 normal, 700 bold
+  variable: '--font-poppins',
 });
 
 export const outfit = Outfit({
@@ -29,10 +36,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} `}
+      className={`${poppins.variable}`}
     >
       <body className="antialiased">
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
       </body>
     </html>
   );

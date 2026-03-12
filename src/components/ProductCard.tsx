@@ -1,10 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Product } from "../types/Product";
-import { FaStar } from "react-icons/fa";
+import { FaPencilAlt, FaStar } from "react-icons/fa";
 import { outfit } from "../app/layout";
+import { useEffect, useState } from "react";
 
 export default function ProductCard({ product }: { product: Product }) {
+  const [role,setRole] = useState("");
+  
+    useEffect(()=>{
+      const userRole = localStorage.getItem("role");
+      setRole(userRole || "");
+    },[])
   return (
     <Link href={`/products/${product.id}`}>
     <div
@@ -40,6 +47,11 @@ export default function ProductCard({ product }: { product: Product }) {
         <FaStar />
         <FaStar />
       </div>
+      {role === "ADMIN" && (
+       <div className="flex justify-end">
+       <FaPencilAlt className="text-2xl" />
+     </div>
+      )}
     </div>
     </Link>
   );
