@@ -5,6 +5,6 @@ export interface Product {
     quantity: number
     small_description: string
     big_description: string
-    image: string;
+    image: string
 }
 

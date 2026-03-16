@@ -18,11 +18,11 @@ export default function ProductCard({ product }: { product: Product }) {
       className={`${outfit.className} text-xl font-bold text-(--color-camel-700) bg-(--color-camel-50) p-6 shadow-md hover:shadow-xl transition`}
     >
       <Image
-        src={product.image || "/products/default.png"}
+        src={product.image.startsWith("http") ? product.image : "/products/default.png"}
         alt={product.name}
         width={250}
-        height={250}
-        className="mb-4 object-cover"
+        height={200}
+        className="mb-4 object-cover h-60"
       />
 
       <h4 className="text-lg font-semibold mb-2">
