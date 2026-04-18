@@ -129,7 +129,7 @@ export default function LoginPage() {
           <div className="text-center text-white px-10">
             <h1 className="text-4xl font-bold mb-4">
               Bem Vindo à <br />
-              <p className={`${greatVibes.className} text-7xl text-center`}>
+              <p className={`${greatVibes.className} text-6xl text-center`}>
                 Le Bouledogue
               </p>
             </h1>
