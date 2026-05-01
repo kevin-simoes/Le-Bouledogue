@@ -15,7 +15,7 @@ export default function ProductCard({ product }: { product: Product }) {
   return (
     <Link href={`/products/${product.id}`}>
     <div
-      className={`${outfit.className} text-xl font-bold text-(--color-camel-700) bg-(--color-camel-50) p-6 shadow-md hover:shadow-xl transition`}
+      className={`${outfit.className} h-120 text-xl font-bold text-(--color-camel-700) bg-(--color-camel-50) p-6 shadow-md hover:shadow-xl transition`}
     >
       <Image
         src={product.image.startsWith("http") ? product.image : "/products/default.png"}

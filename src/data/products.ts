@@ -45,7 +45,7 @@ export const products: Product[] = [
     quantity: 1,
     small_description: "Pão de queijo crocante por fora e cremoso por dentro.",
     big_description: "Feito com polvilho fresco e queijo Minas Padrão de primeira qualidade, nosso pão de queijo é assado no momento certo para garantir a crocância externa perfeita e o interior cremoso e derretido. Uma tradição brasileira que combina perfeitamente com café quentinho.",
-    image: "https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?w=800&q=80"
+    image: ""
   },
   {
     id: 6,
